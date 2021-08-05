@@ -1,0 +1,16 @@
+{
+	"AWSTemplateFormatVersion": "2021-05-08",
+	"Resource": {
+		"S3Bucket": {
+			"Type": "AWS::S3::Bucket"
+		}
+	},
+	"Output": {
+		"BucketName": {
+			"Value": {
+				"Ref": "S3Bucket"
+			},
+			"Description": "Name of the sample Amazon S3 bucket."
+		}
+		}
+}
